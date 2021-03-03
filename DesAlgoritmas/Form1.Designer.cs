@@ -38,7 +38,6 @@
             this.btn_decrypt = new System.Windows.Forms.Button();
             this.txt_decryptedText = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_upload = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_text
@@ -139,22 +138,11 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Dešifruotas tekstas";
             // 
-            // btn_upload
-            // 
-            this.btn_upload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_upload.Location = new System.Drawing.Point(26, 365);
-            this.btn_upload.Name = "btn_upload";
-            this.btn_upload.Size = new System.Drawing.Size(131, 58);
-            this.btn_upload.TabIndex = 10;
-            this.btn_upload.Text = "Failo ikelimas";
-            this.btn_upload.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(834, 450);
-            this.Controls.Add(this.btn_upload);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txt_decryptedText);
             this.Controls.Add(this.btn_decrypt);
@@ -184,7 +172,6 @@
         private System.Windows.Forms.Button btn_decrypt;
         private System.Windows.Forms.RichTextBox txt_decryptedText;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btn_upload;
     }
 }
 

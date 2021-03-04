@@ -20,14 +20,26 @@ namespace DesAlgoritmas
 
         private void btn_encrypt_Click(object sender, EventArgs e)
         {
-            // Uzsifruoja teksta
-            txt_result.Text = des.EncryptionDES(txt_text.Text, txt_key.Text);
+            // Isveda teksta
+            txt_result.Text = des.EncryptionDESEcb(txt_text.Text, txt_key.Text);
         }
 
         private void btn_decrypt_Click(object sender, EventArgs e)
         {
             // Desifruoja texta is nurodyto failo, perraso Teksto lauka
-            txt_decryptedText.Text = des.DecryptionDES(@"C:\Users\Lukas\Desktop\DesAlgoritmas\DecryptedText.txt", txt_key.Text);
+            txt_decryptedText.Text = des.DecryptionDESEcb(@"C:\Users\Lukas\Desktop\DesAlgoritmas\DecryptedText.txt", txt_key.Text);
+        }
+
+        private void btn_encrypt1_Click(object sender, EventArgs e)
+        {
+            // Isveda teksta
+            txt_result.Text = des.EncryptionDESCbc(txt_text.Text, txt_key.Text);
+        }
+
+        private void btn_decrypt1_Click(object sender, EventArgs e)
+        {
+            // Desifruoja texta is nurodyto failo, perraso Teksto lauka
+            txt_decryptedText.Text = des.DecryptionDESCbc(@"C:\Users\Lukas\Desktop\DesAlgoritmas\DecryptedText.txt", txt_key.Text);
         }
     }
 }
